@@ -1,0 +1,18 @@
+.main-nav {
+  font-size: 1.25rem;
+
+  &-item {
+    display: inline-block;
+    margin-left: 1rem;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+
+    &:hover,
+    &.current-item {
+      color: deepskyblue;
+    }
+  }
+}

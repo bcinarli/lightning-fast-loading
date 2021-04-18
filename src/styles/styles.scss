@@ -1,0 +1,26 @@
+@import '~normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 16px/1.5 'Open Sans', sans-serif;
+}
+
+:global {
+  #app-root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 1280px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
