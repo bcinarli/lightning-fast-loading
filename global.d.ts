@@ -10,3 +10,4 @@ declare module '*.png' {
 
 // webpack define plugin definitions
 declare var API: string;
+declare var IMAGE_API: string;
