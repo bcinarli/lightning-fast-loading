@@ -4,9 +4,9 @@
   "description": "PWA Speed Loading Demo",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --node-env development --env legacy",
+    "dev": "webpack serve --node-env development",
     "prebuild": "rm -rf dist",
-    "build": "webpack --env legacy",
+    "build": "webpack",
     "lint": "eslint ./src --fix"
   },
   "author": "Bilal Cinarli <bcinarli@gmail.com>",
