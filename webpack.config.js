@@ -27,6 +27,7 @@ const makeConfig = (env) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: `[name].js`,
+      chunkFilename: `[name].[chunkhash].js`,
       assetModuleFilename: `[name][ext]`,
       publicPath: '/'
     },
@@ -93,7 +94,28 @@ const makeConfig = (env) => {
     ].filter(Boolean),
     optimization: {
       minimize: !isDev,
-      minimizer: ['...', new CssMinimizerPlugin()]
+      minimizer: ['...', new CssMinimizerPlugin()],
+      runtimeChunk: 'single',
+      splitChunks: {
+        cacheGroups: {
+          react: {
+            chunks: 'all',
+            name: 'react',
+            test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types)[\\/]/,
+            priority: 50,
+            enforce: true
+          },
+          vendors: {
+            test: /[\\/]node_modules[\\/]/,
+            chunks: 'initial',
+            name: 'vendor',
+            priority: 30,
+            enforce: true,
+            minChunks: 1,
+            reuseExistingChunk: true
+          }
+        }
+      }
     },
     performance: {
       hints: 'warning',
