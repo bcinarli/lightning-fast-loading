@@ -18,7 +18,7 @@ module.exports = (api) => {
         // skipping env check since we have other env types e.g. modern/legacy are defined
         { skipEnvCheck: true }
       ]
-    ],
+    ].filter(Boolean),
     env: {
       modern: {
         presets: [
