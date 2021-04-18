@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "jsx": "react-jsxdev",
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules"]
+}

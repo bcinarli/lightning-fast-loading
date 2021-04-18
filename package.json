@@ -1,0 +1,77 @@
+{
+  "name": "lightning-fast-pwa",
+  "version": "1.0.0",
+  "description": "PWA Speed Loading Demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --node-env development",
+    "build": "webpack",
+    "lint": "eslint ./src --fix"
+  },
+  "author": "Bilal Cinarli <bcinarli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-beta.3",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.2",
+    "eslint": "^7.24.0",
+    "fork-ts-checker-webpack-plugin": "^6.2.1",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "postcss": "^8.2.10",
+    "postcss-loader": "^5.2.0",
+    "prettier": "^2.2.1",
+    "react-refresh": "^0.10.0",
+    "sass": "^1.32.10",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcinarli/lightning-fast-loading.git"
+  },
+  "keywords": [
+    "PWA",
+    "Service Workers",
+    "Fast Loading",
+    "Optimization",
+    "Performance"
+  ],
+  "bugs": {
+    "url": "https://github.com/bcinarli/lightning-fast-loading/issues"
+  },
+  "homepage": "https://github.com/bcinarli/lightning-fast-loading#readme",
+  "browserslist": {
+    "modern": [
+      "Chrome >= 61",
+      "Edge >= 16",
+      "Firefox >= 60",
+      "Safari >= 10.1",
+      "Opera >= 48"
+    ],
+    "legacy": [
+      "IE 11",
+      "> 0.5%",
+      "last 1 version",
+      "not dead"
+    ]
+  }
+}
