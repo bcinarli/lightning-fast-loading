@@ -81,6 +81,12 @@ const makeConfig = (env) => {
           filename: `[name].${targetEnv}.css`
         })
     ].filter(Boolean),
+    optimization: {
+      minimize: false
+    },
+    performance: {
+      hints: 'warning'
+    },
     stats: 'normal',
     ...(isDev && {
       devtool: 'eval-source-map',
