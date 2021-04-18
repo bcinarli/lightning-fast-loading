@@ -94,7 +94,9 @@ const makeConfig = (env) => {
       minimize: false
     },
     performance: {
-      hints: 'warning'
+      hints: 'warning',
+      maxAssetSize: 174080, // 170kb
+      maxEntrypointSize: 174080 // 170kb
     },
     stats: 'normal',
     ...(isDev && {
