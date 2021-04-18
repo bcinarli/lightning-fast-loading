@@ -30,6 +30,7 @@
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.2",
+    "css-minimizer-webpack-plugin": "^2.0.0",
     "eslint": "^7.24.0",
     "fork-ts-checker-webpack-plugin": "^6.2.1",
     "html-webpack-plugin": "^5.3.1",

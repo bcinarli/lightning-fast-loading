@@ -4,6 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -91,7 +92,8 @@ const makeConfig = (env) => {
         })
     ].filter(Boolean),
     optimization: {
-      minimize: false
+      minimize: !isDev,
+      minimizer: ['...', new CssMinimizerPlugin()]
     },
     performance: {
       hints: 'warning',
