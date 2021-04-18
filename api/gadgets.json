@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ady teenagerinro",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618745681/ady-teenagerinro-sQ0xXxQdfeY-unsplash_qgefwh.jpg",
+    "price": "346.00",
+    "uuid": "aaa0a423-7e56-4347-a4b9-e835e109eb79",
+    "category": "gadget"
+  },
+  {
+    "name": "daniel korpai",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618751366/daniel-korpai-H0vKZjt2k1E-unsplash_f2hyzr.jpg",
+    "price": "204.00",
+    "uuid": "56293a79-5f11-4c96-9c45-b659c6d2791c",
+    "category": "gadget"
+  },
+  {
+    "name": "maxim potkin",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618755155/maxim-potkin-CWmtVAqtgRw-unsplash_aqlmov.jpg",
+    "price": "780.00",
+    "uuid": "45966caf-2b9c-47ce-b91f-6f3b40fa1641",
+    "category": "gadget"
+  },
+  {
+    "name": "riyan ong",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618767717/riyan-ong-fLa1MkdnbV8-unsplash_ni7dyd.jpg",
+    "price": "370.00",
+    "uuid": "5f5f502b-e8da-41bf-a6af-a603b7705d1a",
+    "category": "gadget"
+  },
+  {
+    "name": "bin jaleel almanza",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618767825/bin-jaleel-almanza-VKI8S_O-pYg-unsplash_xqqb9x.jpg",
+    "price": "362.00",
+    "uuid": "c1a8ddb3-cc4b-41c5-a74a-201cf56184e4",
+    "category": "gadget"
+  },
+  {
+    "name": "oscar nilsson",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618767916/oscar-nilsson-W-oqNwbmin0-unsplash_o1lbem.jpg",
+    "price": "333.00",
+    "uuid": "4e6a5662-6e13-42c6-b855-e084e4cdc732",
+    "category": "gadget"
+  },
+  {
+    "name": "screen post",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768050/screen-post-vYxnwamt6HE-unsplash_zl3gji.jpg",
+    "price": "32.00",
+    "uuid": "0f83ffed-acd4-4f13-b52b-c2252eee1397",
+    "category": "gadget"
+  },
+  {
+    "name": "chuttersnap",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768127/chuttersnap-CuLzFor2c4M-unsplash_auzamk.jpg",
+    "price": "255.00",
+    "uuid": "bd6a6ae6-464f-4d0d-9027-6df3a7705971",
+    "category": "gadget"
+  },
+  {
+    "name": "artem beliaikin",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768190/artem-beliaikin-zsam4a4cpq4-unsplash_z4r0hv.jpg",
+    "price": "219.00",
+    "uuid": "478d40fe-4da0-40a9-932d-b633425b94fb",
+    "category": "gadget"
+  },
+  {
+    "name": "tyler casey",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768509/tyler-casey-f5FyIQGNUcM-unsplash_l83vm5.jpg",
+    "price": "932.00",
+    "uuid": "ca813e6e-b23f-4da0-8aac-a0cd0d150382",
+    "category": "gadget"
+  },
+  {
+    "name": "markus winkler",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768583/markus-winkler--1BAvfgHFK4-unsplash_xqb6ce.jpg",
+    "price": "753.00",
+    "uuid": "8b7f0d15-8d19-4d48-a4a4-341e7395c26f",
+    "category": "gadget"
+  },
+  {
+    "name": "sean whelan",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768681/sean-whelan-NG_a-z0ScM0-unsplash_itzjzs.jpg",
+    "price": "275.00",
+    "uuid": "f9a44450-e8ac-4faa-971a-2dc09af22c83",
+    "category": "gadget"
+  },
+  {
+    "name": "ehimetalor akhere unuabona",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768736/ehimetalor-akhere-unuabona-wa5z9o9fgjw-unsplash_id7ek3.jpg",
+    "price": "947.00",
+    "uuid": "ada02cb6-d4f1-422e-8da3-69ed735e6c7b",
+    "category": "gadget"
+  },
+  {
+    "name": "rahul chakraborty",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768792/rahul-chakraborty-E_mHYosg98k-unsplash_hotcyh.jpg",
+    "price": "223.00",
+    "uuid": "6a99d5e7-a0f7-4557-a217-aad7bb12bbba",
+    "category": "gadget"
+  },
+  {
+    "name": "debby hudson",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618769005/debby-hudson-STo4ziY5g7A-unsplash_g4xlkv.jpg",
+    "price": "359.00",
+    "uuid": "6afb59d8-b4b9-457c-ae9c-7bb75eeb00d2",
+    "category": "gadget"
+  },
+  {
+    "name": "selwyn van haaren",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768953/selwyn-van-haaren-RfAADt_V2QU-unsplash_psga66.jpg",
+    "price": "591.00",
+    "uuid": "bd272549-4c84-447c-9f56-cfe751a3724f",
+    "category": "gadget"
+  },
+  {
+    "name": "ivan bandura",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768950/ivan-bandura-EWVXMoIWlpA-unsplash_vjrubi.jpg",
+    "price": "550.00",
+    "uuid": "e5ca6daa-2d14-4bd2-8de1-9f8450e08a3c",
+    "category": "gadget"
+  },
+  {
+    "name": "arisa chattasa",
+    "image": "https://res.cloudinary.com/bcinarli/image/upload/v1618768950/arisa-chattasa-VbUNV9Ui7zk-unsplash_xmaen0.jpg",
+    "price": "250.00",
+    "uuid": "fd801756-3ef5-45ac-a1cf-0953edc2b9cb",
+    "category": "gadget"
+  }
+]
