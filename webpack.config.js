@@ -26,10 +26,15 @@ const makeConfig = (env) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: `[name].js`,
+      assetModuleFilename: `[name][ext]`,
       publicPath: '/'
     },
     module: {
       rules: [
+        {
+          test: /\.png/,
+          type: 'asset/resource'
+        },
         {
           test: /\.ts?/,
           exclude: [/node_modules/],
@@ -71,6 +76,9 @@ const makeConfig = (env) => {
       isDev && new webpack.HotModuleReplacementPlugin(),
       isDev && new ReactRefreshWebpackPlugin(),
       new ForkTsCheckerWebpackPlugin(),
+      new webpack.DefinePlugin({
+        API: JSON.stringify('https://607c19c267e6530017573aa0.mockapi.io')
+      }),
       new HTMLWebpackPlugin({
         inject: true,
         favicon: path.join(__dirname, './src/assets/favicon.png'),
@@ -78,7 +86,7 @@ const makeConfig = (env) => {
       }),
       !isDev &&
         new MiniCssExtractPlugin({
-          filename: `[name].${targetEnv}.css`
+          filename: `[name].css`
         })
     ].filter(Boolean),
     optimization: {
@@ -89,10 +97,11 @@ const makeConfig = (env) => {
     },
     stats: 'normal',
     ...(isDev && {
-      devtool: 'eval-source-map',
+      devtool: 'eval-cheap-module-source-map',
       devServer: {
         contentBase: path.join(__dirname, 'dist'),
         hot: true,
+        historyApiFallback: true,
         port: 3000,
         overlay: true
       }

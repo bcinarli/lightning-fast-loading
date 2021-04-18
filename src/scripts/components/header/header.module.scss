@@ -1,0 +1,26 @@
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  &-image {
+    display: inline-block;
+    width: 128px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
