@@ -17,7 +17,7 @@ const ProductCard: FC<Product> = ({ name, image, price, category }) => {
     <div className={css('product-card')}>
       <div
         className={css('product-card-image')}
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${IMAGE_API}${image})` }}
       />
 
       <h3 className={css('product-card-title')}>{name}</h3>

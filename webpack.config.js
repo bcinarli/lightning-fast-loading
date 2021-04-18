@@ -77,7 +77,8 @@ const makeConfig = (env) => {
       isDev && new ReactRefreshWebpackPlugin(),
       new ForkTsCheckerWebpackPlugin(),
       new webpack.DefinePlugin({
-        API: JSON.stringify('https://607c19c267e6530017573aa0.mockapi.io')
+        API: JSON.stringify('https://607c19c267e6530017573aa0.mockapi.io'),
+        IMAGE_API: JSON.stringify('http://api.lightning-fast.pwa/data/images')
       }),
       new HTMLWebpackPlugin({
         inject: true,
