@@ -10,14 +10,20 @@ type Products = Product[];
 
 const ProductList = () => {
   const [products, setProducts] = useState([] as Products);
+  const cachedProducts = localStorage.getItem('gadgets');
 
   useEffect(() => {
-    (async () => {
-      const response = await fetch(`${API}/gadgets`);
-      const fetchedProducts = await response.json();
+    if (!cachedProducts) {
+      (async () => {
+        const response = await fetch(`${API}/gadgets`);
+        const fetchedProducts = await response.json();
 
-      setProducts(fetchedProducts);
-    })();
+        localStorage.setItem('gadgets', JSON.stringify(fetchedProducts));
+        setProducts(fetchedProducts);
+      })();
+    } else {
+      setProducts(JSON.parse(cachedProducts));
+    }
   }, []);
 
   return (
