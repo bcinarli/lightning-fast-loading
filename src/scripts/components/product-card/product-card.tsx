@@ -19,7 +19,7 @@ const ProductCard: FC<Product> = ({ name, image, price, category }) => {
     <div className={css('product-card')}>
       <div className={css('product-card-image')}>
         <img
-          src={`${IMAGE_API}/next-gen/${nextgen}.webp`}
+          src={`${IMAGE_API}/next-gen-proper-sizes/${nextgen}.webp`}
           alt={name}
           className={css('product-card-image-element')}
           loading="lazy"
