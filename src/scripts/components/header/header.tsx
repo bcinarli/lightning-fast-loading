@@ -11,7 +11,7 @@ const Header = () => {
     <header className={css('masthead')}>
       <Link to="/" className={css('logo')}>
         <span className={css('logo-image')}>
-          <img src={logo} alt="Fast Loading Website, Lightning logo" />
+          <img src={logo} alt="Fast Loading Website, Lightning logo" width="128" height="128" />
         </span>
         <span className={css('logo-text')}>Fast Loading Website</span>
       </Link>
