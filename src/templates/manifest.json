@@ -1,0 +1,23 @@
+{
+  "short_name": "Fast",
+  "name": "Lightning Fast Website",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "scope": "/",
+  "description": "A demo website for investigation performance metrics",
+  "background_color": "deepskyblue",
+  "theme_color": "deepskyblue"
+}

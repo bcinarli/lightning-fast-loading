@@ -5,6 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -90,7 +92,18 @@ const makeConfig = (env) => {
       !isDev &&
         new MiniCssExtractPlugin({
           filename: `[name].css`
-        })
+        }),
+      new WorkboxPlugin.GenerateSW({
+        clientsClaim: true,
+        skipWaiting: true,
+        exclude: [/\.LICENSE\.txt?$/, /\.html?$/]
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: './src/templates/manifest.json', to: './' },
+          { from: './src/assets/images', to: './images' }
+        ]
+      })
     ].filter(Boolean),
     optimization: {
       minimize: !isDev,
