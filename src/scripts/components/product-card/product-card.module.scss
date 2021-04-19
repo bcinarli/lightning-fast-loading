@@ -5,8 +5,12 @@
   &-image {
     width: 100%;
     height: 250px;
-    background: center no-repeat;
-    background-size: cover;
+
+    &-element {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
   }
 
   &-title {

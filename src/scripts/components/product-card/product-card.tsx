@@ -17,12 +17,14 @@ const ProductCard: FC<Product> = ({ name, image, price, category }) => {
 
   return (
     <div className={css('product-card')}>
-      <div
-        className={css('product-card-image')}
-        style={{
-          backgroundImage: `url(${IMAGE_API}/next-gen/${nextgen}.webp)`
-        }}
-      />
+      <div className={css('product-card-image')}>
+        <img
+          src={`${IMAGE_API}/next-gen/${nextgen}.webp`}
+          alt={name}
+          className={css('product-card-image-element')}
+          loading="lazy"
+        />
+      </div>
 
       <h3 className={css('product-card-title')}>{name}</h3>
       <span className={css('product-card-price')}>{price}€</span>
