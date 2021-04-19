@@ -19,7 +19,7 @@ Stages as branches are different stages of the optimization throughout the proce
 
 ### Stage 0
 The initial application without any optimization. 
-![Stage 0 Lighthouse Report](https://raw.githubusercontent.com/bcinarli/lightning-fast-loading/main/lighthouse-reports/stage-0.png)
+![Stage 0 Lighthouse Report](https://raw.githubusercontent.com/bcinarli/lightning-fast-loading/main/lighthouse-reports/stage-0.png?raw=true)
 
 ### Stage 1 
 Minification added to webpack optimization 
@@ -58,4 +58,4 @@ To mimicing offline, localStorage usage for API fecthing added. (remarks: this h
 
 After final stage, the application has started to load almost immediately as less than 0.5 seconds.
 
-![Lightning Fast Loading](https://raw.githubusercontent.com/bcinarli/lightning-fast-loading/main/app-screenshot.png "Lightning Fast Loading")
+![Lightning Fast Loading](https://raw.githubusercontent.com/bcinarli/lightning-fast-loading/main/app-screenshot.png?raw-true "Lightning Fast Loading")
